@@ -5,15 +5,17 @@
 // Create a new client instance
 // const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
+const { clientId, guildId, BOT_TOKEN, OPENAI_API_KEY } = require('./config.json');
+
 require('dotenv').config();
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: OPENAI_API_KEY,
 });
 
-const token = process.env.BOT_TOKEN;
+const token = BOT_TOKEN;
 const openai = new OpenAIApi(configuration);
 
 // When the client is ready, run this code (only once)

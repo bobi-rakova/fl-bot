@@ -2,9 +2,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord.js');
-const { clientId, guildId, token } = require('./config.json');
+const { clientId, guildId, BOT_TOKEN, OPENAI_API_KEY } = require('./config.json');
 
-const rest = new REST({ version: '10' }).setToken(token);
+const rest = new REST({ version: '10' }).setToken(BOT_TOKEN);
 
 const commands = [];
 const commandsPath = path.join(__dirname, 'commands');
