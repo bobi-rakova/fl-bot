@@ -3,8 +3,8 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('report')
-		.setDescription('Replies with a set of options for you to give feedback!'),
+		.setName('voice')
+		.setDescription('Replies with a set of choices for you to articulate and document your concern.'),
 	async execute(interaction) {
 
 
@@ -41,7 +41,7 @@ module.exports = {
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		await interaction.reply({ content: 'What would you want to report?', components: [row] });
+		await interaction.reply({ content: 'What would you want to voice?', components: [row] });
 		 
 	},
 };

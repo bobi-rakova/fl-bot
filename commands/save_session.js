@@ -7,6 +7,7 @@ module.exports = {
 	async execute(interaction) {
 		console.log("*** save_session command ***")
 		console.log(interaction.client.story_prompt);
+		
 		await interaction.reply('Saved');
 	},
 };

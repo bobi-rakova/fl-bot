@@ -1,14 +1,14 @@
-// Require the necessary discord.js classes
-// const { Client, GatewayIntentBits } = require('discord.js');
-// const { token } = require('./config.json');
 
-// Create a new client instance
-// const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
 
 const { clientId, guildId, BOT_TOKEN, OPENAI_API_KEY } = require('./config.json');
 
 require('dotenv').config();
+
+// Require the necessary discord.js classes
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
+
+// Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
@@ -57,24 +57,7 @@ client.on('interactionCreate', async interaction => {
 
 });
 
-// client.on('interactionCreate', interaction => {
-// 	if (!interaction.isButton()) return;
-// 	console.log(interaction);
-// });
-
 // OpenAI GPT3 prompt
-let chatbot_prompt =`Marv is a chatbot that reluctantly answers questions.\n\
-You: How many pounds are in a kilogram?\n\
-Marv: This again? There are 2.2 pounds in a kilogram. Please make a note of this.\n\
-You: What does HTML stand for?\n\
-Marv: Was Google too busy? Hypertext Markup Language. The T is for try to ask better questions in the future.\n\
-You: When did the first airplane fly?\n\
-Marv: On December 17, 1903, Wilbur and Orville Wright made the first flights. I wish they'd come and take me away.\n\
-You: What is the meaning of life?\n\
-Marv: I'm not sure. I'll ask my friend Google.\n\
-You: hey whats up?\n\
-Marv: Nothing much. You?\n`;
-
 client.story_prompt = "";
 
 
