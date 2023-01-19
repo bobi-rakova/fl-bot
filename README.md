@@ -20,6 +20,7 @@ CHARMS presents a symbolic logic-based approach to documentation of AI systems g
 - quality-of-service,
 - interpersonal, and
 - social system/societal harms.
+
 Users of large language models may not know what kind of harm they might be exposed to, therefore we aim to signpost or guide them in voicing their experience through documenting and narrowing down the potential harm.  
 
 The symbolic logic-based approach to algorithmic harms reporting is inspired by recent developments at the intersection of algorithmic auditing and computational law. The outputs of the project aim to empower evolving new kinds of computational contracts between people and AI companies. A contract is an agreement by parties creating mutual obligations that are enforceable by law. A computable contract is one that is specified in sufficient detail to provide unambiguous answers to questions about compliance of clearly specified circumstances with the terms and conditions of the contract. From a pragmatic point of view, computable contracts are useful as the basis for computer systems capable of automated compliance management. In the context of AI and sociotechnical harms reporting, we aim to explore how automated compliance management could enable [new forms of collective action in contesting decisions made by algorithmic systems](https://foundation.mozilla.org/en/blog/terms-we-serve-with-introducing-a-new-mechanism-for-engaging-with-algorithmic-systems/).
