@@ -57,34 +57,34 @@ client.on('interactionCreate', async interaction => {
 
 });
 
-// OpenAI GPT3 prompt
-client.story_prompt = "";
+
+// // OpenAI GPT3 prompt
+// client.story_prompt = "";
 
 
-client.on("messageCreate", function(message) {
-	// checks to see if the author of a message is a bot
-   if (message.author.bot) return;  
+// client.on("messageCreate", function(message) {
+// 	// checks to see if the author of a message is a bot
+//    if (message.author.bot) return;  
 
-   client.story_prompt += `${message.content}\n`;
-  (async () => {
-        const gptResponse = await openai.createCompletion({
-            model: "text-davinci-002",
-            prompt: client.story_prompt,
-            max_tokens: 1800,
-            temperature: 0.9,
-            top_p: 0.3,
-            presence_penalty: 0,
-            frequency_penalty: 0.5,
-          });
-        message.reply(`${gptResponse.data.choices[0].text}`);
-        //message.reply(`${gptResponse.data.choices[0].text.substring(5)}`);
+//    client.story_prompt += `${message.content}\n`;
+//   (async () => {
+//         const gptResponse = await openai.createCompletion({
+//             model: "text-davinci-002",
+//             prompt: client.story_prompt,
+//             max_tokens: 1800,
+//             temperature: 0.9,
+//             top_p: 0.3,
+//             presence_penalty: 0,
+//             frequency_penalty: 0.5,
+//           });
+//         message.reply(`${gptResponse.data.choices[0].text}`);
+//         //message.reply(`${gptResponse.data.choices[0].text.substring(5)}`);
 
-        // save to the interaction.client object
-        // future calls to the GPT3 API willl use this updated prompt
-        client.story_prompt += `${gptResponse.data.choices[0].text}\n`;
-    })();
-});  
+//         // save to the interaction.client object
+//         // future calls to the GPT3 API willl use this updated prompt
+//         client.story_prompt += `${gptResponse.data.choices[0].text}\n`;
+//     })();
+// });  
 
 // Login to Discord with your client's token
-// client.login(token);
 client.login(token);

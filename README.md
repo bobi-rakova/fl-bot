@@ -1,7 +1,7 @@
-CHARMS
+FL-BOT
 ====================
 
-CHARMS is a sociotechnical harms reporting Discord bot leveraging a rule based logic programming approach to documenting the failure modes of algorithmic systems more broadly and large language models in particular.
+Formal Logic (FL) bot - is a sociotechnical harms reporting Discord bot leveraging a rule based logic programming approach to documenting the failure modes of algorithmic systems more broadly and large language models in particular.
 
 ## Goal for the projects:
 
@@ -12,9 +12,9 @@ CHARMS is a sociotechnical harms reporting Discord bot leveraging a rule based l
 
 There have been a number of recent investigations and calls for algorithmic contestability i. e. a set of mechanisms for people to disagree, challenge, or dispute algorithmic outcomes.
 
-Building on recent work by [Mozilla’s YouTube Regrets reporter](https://foundation.mozilla.org/en/youtube/findings/) project, Algorithmic Justice League’s [Community Reporting of Algorithmic System Harms](https://www.ajl.org/crash-project) project, and [the AI Incidents Database](https://incidentdatabase.ai/), we set out to empower everyday users of AI to collect evidence of algorithmic harms and collectively challenge algorithmic systems though a Discord bot called CHARMS.
+Building on recent work by [Mozilla’s YouTube Regrets reporter](https://foundation.mozilla.org/en/youtube/findings/) project, Algorithmic Justice League’s [Community Reporting of Algorithmic System Harms](https://www.ajl.org/crash-project) project, and [the AI Incidents Database](https://incidentdatabase.ai/), we set out to empower everyday users of AI to collect evidence of algorithmic harms and collectively challenge algorithmic systems though a Discord bot.
 
-CHARMS presents a symbolic logic-based approach to documentation of AI systems grounded in [a taxonomy of sociotechnical harms](https://arxiv.org/abs/2210.05791) proposed by Renee Shelby et al. who define sociotechnical harms broadly as "the adverse lived experiences resulting from a system’s deployment and operation in the world—occurring through the ‘co-productive’ interplay of technical system components and societal power dynamics." The taxonomy distinguishes between the following kinds of harms
+This prototype presents a symbolic logic-based approach to documentation of AI systems grounded in [a taxonomy of sociotechnical harms](https://arxiv.org/abs/2210.05791) proposed by Renee Shelby et al. who define sociotechnical harms broadly as "the adverse lived experiences resulting from a system’s deployment and operation in the world—occurring through the ‘co-productive’ interplay of technical system components and societal power dynamics." The taxonomy distinguishes between the following kinds of harms
 - representational,
 - allocative,
 - quality-of-service,
